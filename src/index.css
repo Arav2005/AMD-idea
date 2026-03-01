@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 92%;
+
+    --card: 222 40% 10%;
+    --card-foreground: 210 40% 92%;
+
+    --popover: 222 40% 10%;
+    --popover-foreground: 210 40% 92%;
+
+    --primary: 152 68% 45%;
+    --primary-foreground: 222 47% 6%;
+
+    --secondary: 222 30% 16%;
+    --secondary-foreground: 210 40% 85%;
+
+    --muted: 222 30% 14%;
+    --muted-foreground: 215 20% 55%;
+
+    --accent: 222 30% 18%;
+    --accent-foreground: 210 40% 92%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 38 92% 10%;
+
+    --safe: 152 68% 45%;
+    --safe-foreground: 152 68% 8%;
+
+    --suspicious: 38 92% 50%;
+    --suspicious-foreground: 38 92% 10%;
+
+    --high-risk: 0 72% 51%;
+    --high-risk-foreground: 0 0% 100%;
+
+    --border: 222 30% 18%;
+    --input: 222 30% 16%;
+    --ring: 152 68% 45%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 222 40% 8%;
+    --sidebar-foreground: 210 40% 92%;
+    --sidebar-primary: 152 68% 45%;
+    --sidebar-primary-foreground: 222 47% 6%;
+    --sidebar-accent: 222 30% 14%;
+    --sidebar-accent-foreground: 210 40% 92%;
+    --sidebar-border: 222 30% 18%;
+    --sidebar-ring: 152 68% 45%;
+
+    --glow-safe: 0 0 20px hsl(152 68% 45% / 0.3);
+    --glow-warning: 0 0 20px hsl(38 92% 50% / 0.3);
+    --glow-danger: 0 0 20px hsl(0 72% 51% / 0.3);
+
+    --font-display: 'JetBrains Mono', monospace;
+    --font-body: 'Inter', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .glow-safe {
+    box-shadow: var(--glow-safe);
+  }
+  .glow-warning {
+    box-shadow: var(--glow-warning);
+  }
+  .glow-danger {
+    box-shadow: var(--glow-danger);
+  }
+  .font-mono-display {
+    font-family: var(--font-display);
+  }
+}
+
+@keyframes slide-in-right {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes scan-line {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.animate-slide-in {
+  animation: slide-in-right 0.3s ease-out;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
