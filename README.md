@@ -1,73 +1,55 @@
-# Welcome to your Lovable project
+# Alert-Sentinel-Speak
 
-## Project info
+**Alert-Sentinel-Speak** is a project designed to [briefly describe purpose—e.g., implement voice-based alert notifications or security monitoring].  
+It features multiple modules, organized in subfolders, to provide a structured and maintainable architecture.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 🗂 Project Structure
 
-There are several ways of editing your application.
+- **`src/`** → Contains main application source code.
+- **`public/`** → Static files served by the app.
+- **`components.json`** → Component definitions/configuration.
+- **`bun.lock`** → Dependency lockfile (if using Bun).
+- **`eslint.config.js`** → ESLint configuration for code quality.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 💻 Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone the repository:
 
-**Use your preferred IDE**
+```bash
+git clone https://github.com/Arav2005/AMD-idea.git
+cd alert-sentinel-speak-main
+Install dependencies (example using npm):
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+npm install
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+If using Bun:
 
-Follow these steps:
+bun install ##
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+alert-sentinel-speak-main/
+│── README.md
+│── index.html
+│── package.json
+│── src/
+│ └── App.css
+│ └── App.js
+│── public/
+│ └── favicon.ico
+│ └── placeholder.svg
+│ └── robots.txt
+│── components.json
+│── bun.lock
+│── eslint.config.js
+Start the application:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+npm start
 
-# Step 3: Install the necessary dependencies.
-npm i
+Or with Bun:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+bun run start
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Open your browser at http://localhost:3000 (or the port specified in your config).
