@@ -1,6 +1,6 @@
 # Alert-Sentinel-Speak
 
-**Alert-Sentinel-Speak** is a project designed to [briefly describe purpose—e.g., implement voice-based alert notifications or security monitoring].  
+**Alert-Sentinel-Speak** is a project designed to help alzheimer patients
 It features multiple modules, organized in subfolders, to provide a structured and maintainable architecture.
 
 ---
